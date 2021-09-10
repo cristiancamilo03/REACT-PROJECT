@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
+
+
 const Personajes = ({imagen, nombre, edad, genero,posicion,equipo,id}) => (
+
     <div className="card">
         <div className="card-body">
             <div>
@@ -15,7 +18,9 @@ const Personajes = ({imagen, nombre, edad, genero,posicion,equipo,id}) => (
             <p className="card-text">Genero: {genero}.</p>
             <p className="card-text">Posicion: {posicion}.</p>
             <p className="card-text">Equipo: {equipo}.</p>
+
             <p><Link to={`/personaje/${id}`} class="btn btn-primary">Detalle</Link></p>
+
         </div>
     </div>
 );
